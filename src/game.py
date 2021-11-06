@@ -5,7 +5,7 @@ class Game:
         self.size = size
         self.map = []
         self.initialize_map()
-    
+
     def initialize_map(self):
         new_map = []
         for row in range(self.size):
@@ -44,6 +44,22 @@ class Game:
                     empty.append((row, column))
 
         return empty
+    
+    def swap_tiles(self, from_x, from_y, to_x, to_y):
+        from_tile = self.map[from_y][from_x]
+        to_tile = self.map[to_y][to_x]
+
+        if from_tile == 0:
+            return False
+
+        if to_tile == 0:
+            self.map[to_y][to_x] = from_tile
+            self.map[from_y][from_x] = 0
+            return True
+        elif from_tile == to_tile:
+            self.map[to_y][to_x] = from_tile + to_tile
+            self.map[from_y][from_x] = 0
+            return True
     
     def __str__(self):
         printed = ""
