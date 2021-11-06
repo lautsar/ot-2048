@@ -61,6 +61,16 @@ class Game:
             self.map[from_y][from_x] = 0
             return True
     
+    def move_left(self):
+        legal_move = False
+        for row in range(self.size):
+            for column in range(self.size - 1):
+                for column in range(self.size - 1):
+                    if self.swap_tiles(column+1, row, column, row) is True:
+                        legal_move = True
+
+        print(self)
+
     def __str__(self):
         printed = ""
         for row in self.map:
