@@ -35,7 +35,7 @@ class Game:
 
         self.map[y][x] = 2
         return True
-    
+
     def empty_tiles(self):
         empty = []
         for column in range(self.size):
@@ -44,7 +44,7 @@ class Game:
                     empty.append((row, column))
 
         return empty
-    
+
     def swap_tiles(self, from_x, from_y, to_x, to_y):
         from_tile = self.map[from_y][from_x]
         to_tile = self.map[to_y][to_x]
@@ -60,7 +60,7 @@ class Game:
             self.map[to_y][to_x] = from_tile + to_tile
             self.map[from_y][from_x] = 0
             return True
-    
+
     def move_left(self):
         legal_move = False
         for row in range(self.size):
@@ -69,7 +69,29 @@ class Game:
                     if self.swap_tiles(column+1, row, column, row) is True:
                         legal_move = True
 
-        print(self)
+    def move_right(self):
+        legal_move = False
+        for row in range(self.size):
+            for column in range(self.size - 1):
+                for column in range(self.size - 1):
+                    if self.swap_tiles(column, row, column + 1, row) is True:
+                        legal_move = True
+
+    def move_up(self):
+        legal_move = False
+        for column in range(self.size):
+            for row in range(self.size - 1):
+                for row in range(self.size - 1):
+                    if self.swap_tiles(column, row + 1, column, row) is True:
+                        legal_move = True
+
+    def move_down(self):
+        legal_move = False
+        for column in range(self.size):
+            for row in range(self.size - 1):
+                for row in range(self.size - 1):
+                    if self.swap_tiles(column, row, column, row + 1) is True:
+                        legal_move = True
 
     def __str__(self):
         printed = ""
