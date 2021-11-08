@@ -7,6 +7,7 @@ def main():
 
     while True:
         print(new_game)
+        print("1 left, 3 right, 5 up, 2 down, q quit")
         command = input("Command: ")
         if command == "1":
             print("Move left")
@@ -25,6 +26,7 @@ def main():
             break
         else:
             print("Unknown command")
+            print("1 left, 3 right, 5 up, 2 down, q quit")
 
 if __name__ == '__main__':
     main()
