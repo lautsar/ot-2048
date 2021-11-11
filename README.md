@@ -8,4 +8,8 @@
 
 [komentorivi.txt](laskarit/viikko1/komentorivi.txt)
 
-Muutos tiedostoon
+### Viikko 2
+
+[Vaatimusmäärittely](vaatimusmaarittely.md)
+
+[Tuntikirjanpito](tuntikirjanpito.md)
