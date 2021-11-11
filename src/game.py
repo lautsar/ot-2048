@@ -68,6 +68,8 @@ class Game:
                 for column in range(self.size - 1):
                     if self.swap_tiles(column+1, row, column, row) is True:
                         legal_move = True
+        
+        return legal_move
 
     def move_right(self):
         legal_move = False
@@ -77,6 +79,8 @@ class Game:
                     if self.swap_tiles(column, row, column + 1, row) is True:
                         legal_move = True
 
+        return legal_move
+
     def move_up(self):
         legal_move = False
         for column in range(self.size):
@@ -85,6 +89,8 @@ class Game:
                     if self.swap_tiles(column, row + 1, column, row) is True:
                         legal_move = True
 
+        return legal_move
+
     def move_down(self):
         legal_move = False
         for column in range(self.size):
@@ -92,6 +98,8 @@ class Game:
                 for row in range(self.size - 1):
                     if self.swap_tiles(column, row, column, row + 1) is True:
                         legal_move = True
+        
+        return legal_move
 
     def __str__(self):
         printed = ""

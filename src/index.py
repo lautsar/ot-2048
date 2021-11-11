@@ -11,16 +11,20 @@ def main():
         command = input("Command: ")
         if command == "1":
             print("Move left")
-            new_game.move_left()
+            if new_game.move_left() is True:
+                new_game.new_tile()
         elif command == "3":
             print("Move right")
-            new_game.move_right()
+            if new_game.move_right() is True:
+                new_game.new_tile()
         elif command == "5":
             print("Move up")
-            new_game.move_up()
+            if new_game.move_up() is True:
+                new_game.new_tile()
         elif command =="2":
             print("Move down")
-            new_game.move_down()
+            if new_game.move_down() is True:
+                new_game.new_tile()
         elif command == "q":
             print("Game ends")
             break
