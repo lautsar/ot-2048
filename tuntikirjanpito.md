@@ -7,4 +7,5 @@ Pvm | Aika | Mitä tehty
 4.11. | 3 | Projektin alustus, asennuksia. Ensimmäiset toiminnallisuudet (pelilaudan alustaminen)
 6.11. | 2 | Laattojen liikuttelu eri suuntiin
 8.11. | 3 | Unittestiin tutustuminen, ensimmäiset testit
-Yht. | 11 |
+11.11. | 1 | Pientä yleistä säätöä. Uuden laatan arvonta, jos laillinen siirto
+Yht. | 12 |
