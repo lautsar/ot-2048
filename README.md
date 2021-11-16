@@ -10,6 +10,6 @@
 
 ### Viikko 2
 
-[Vaatimusmäärittely](vaatimusmaarittely.md)
+[Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)
 
-[Tuntikirjanpito](tuntikirjanpito.md)
+[Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
