@@ -1,15 +1,35 @@
-# Ohjelmistotekniikka, harjoitustyö
+# 2048-peli
 
-## Tehtävät
+Tämä on kurssin *TKT20002 Ohjelmistotekniikka* harjoitustyö. Sovellus on 2048-peli.
 
-### Viikko 1
+2048-pelin tavoitteena on yhdistää pelilaudalla olevia laattoja. Samanarvoiset laatat yhdistyvät ja niiden arvo kasvaa. Tavoitteena on saada
+mahdollisimman suuriarvoinen laatta. Peli päättyy, kun siirtoja ei enää ole mahdollista tehdä. 
 
-[gitlog.txt](laskarit/viikko1/gitlog.txt)
+## Dokumentaatio
 
-[komentorivi.txt](laskarit/viikko1/komentorivi.txt)
+- [Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)
 
-### Viikko 2
+- [Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
 
-[Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)
+## Komentorivikomennot
 
-[Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
+Riippuvuudet voi asentaa komennolla
+```
+poetry install
+```
+
+Sovelluksen voi käynnistää komennolla
+```
+poetry run invoke start
+```
+
+Testit voi suorittaa komennolla
+```
+poetry run invoke test
+```
+
+Testikattavuusraportin voi muodostaa komennolla
+```
+poetry run invoke coverage-report
+```
+Raportti muodostuu *htmlcov*-hakemistoon
