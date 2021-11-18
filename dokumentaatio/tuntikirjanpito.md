@@ -8,4 +8,5 @@ Pvm | Aika | Mitä tehty
 6.11. | 2 | Laattojen liikuttelu eri suuntiin
 8.11. | 3 | Unittestiin tutustuminen, ensimmäiset testit
 11.11. | 1 | Pientä yleistä säätöä. Uuden laatan arvonta, jos laillinen siirto
-Yht. | 12 |
+18.11. | 1 | Peli päättyy, kun laillisia siirtoja ei enää ole
+Yht. | 13 |

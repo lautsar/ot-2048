@@ -101,6 +101,24 @@ class Game:
         
         return legal_move
 
+    def game_continues(self):
+        for row in range(self.size):
+            for column in range(self.size):
+                if self.map[row][column] == 0:
+                    return True
+
+        for row in range(self.size):
+            for column in range(self.size - 1):
+                if self.map[row][column] == self.map[row][column + 1]:
+                    return True
+
+        for row in range(self.size - 1):
+            for column in range(self.size):
+                if self.map[row + 1][column] == self.map[row][column]:
+                    return True
+
+        return False
+
     def __str__(self):
         printed = ""
         for row in self.map:

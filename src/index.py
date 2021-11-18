@@ -1,11 +1,11 @@
 import game
 
 def main():
-    new_game = game.Game(4)
+    new_game = game.Game(3)
 
     command = ""
 
-    while True:
+    while new_game.game_continues():
         print(new_game)
         print("1 left, 3 right, 5 up, 2 down, q quit")
         command = input("Command: ")
@@ -31,6 +31,9 @@ def main():
         else:
             print("Unknown command")
             print("1 left, 3 right, 5 up, 2 down, q quit")
+    
+    print(new_game)
+    print("Game ended")
 
 if __name__ == '__main__':
     main()
