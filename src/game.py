@@ -18,7 +18,7 @@ class Game:
 
         drawn_tiles = 0
 
-        while drawn_tiles < 3:
+        while drawn_tiles < self.size:
             if self.new_tile() is True:
                 drawn_tiles = drawn_tiles + 1
 
