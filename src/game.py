@@ -1,9 +1,12 @@
 import random
 
 class Game:
-    def __init__(self, size):
+    def __init__(self, size, player="Unknown"):
         self.size = size
+        self.player = player
         self.map = []
+        self.moves = 0
+        self.result = "New game"
         self.initialize_map()
 
     def initialize_map(self):
@@ -70,6 +73,9 @@ class Game:
                     if self.swap_tiles(column+1, row, column, row) is True:
                         legal_move = True
 
+        if legal_move is True:
+            self.moves += 1
+
         return legal_move
 
     def move_right(self):
@@ -79,6 +85,9 @@ class Game:
                 for column in range(self.size - 1):
                     if self.swap_tiles(column, row, column + 1, row) is True:
                         legal_move = True
+
+        if legal_move is True:
+            self.moves += 1
 
         return legal_move
 
@@ -90,6 +99,9 @@ class Game:
                     if self.swap_tiles(column, row + 1, column, row) is True:
                         legal_move = True
 
+        if legal_move is True:
+            self.moves += 1
+
         return legal_move
 
     def move_down(self):
@@ -100,9 +112,18 @@ class Game:
                     if self.swap_tiles(column, row, column, row + 1) is True:
                         legal_move = True
 
+        if legal_move is True:
+            self.moves += 1
+
         return legal_move
 
     def game_continues(self):
+        for row in range(self.size):
+            for column in range(self.size):
+                if self.map[row][column] == 2048:
+                    self.result = "Game won"
+                    return False
+
         for row in range(self.size):
             for column in range(self.size):
                 if self.map[row][column] == 0:
@@ -118,7 +139,11 @@ class Game:
                 if self.map[row + 1][column] == self.map[row][column]:
                     return True
 
+        self.result = "Game lost"
         return False
+
+    def get_results(self):
+        print(f"Player {self.player} made {self.moves} moves in {self.size}x{self.size} grid, {self.result}")
 
     def __str__(self):
         printed = ""

@@ -14,25 +14,21 @@ class GameLoop:
             self.render()
 
     def handle_events(self):
-        for event in pygame.event.get():
+        for event in self._event_queue.get():
             if self._board.game_continues() is False:
-                print("Peli päättyy")
+                return False
 
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
-                    print("Vasen")
                     if self._board.move_left() is True:
                         self._board.new_tile()
                 if event.key == pygame.K_RIGHT:
-                    print("Oikea")
                     if self._board.move_right() is True:
                         self._board.new_tile()
                 if event.key == pygame.K_UP:
-                    print("Ylös")
                     if self._board.move_up() is True:
                         self._board.new_tile()
                 if event.key == pygame.K_DOWN:
-                    print("Alas")
                     if self._board.move_down() is True:
                         self._board.new_tile()
             elif event.type == pygame.QUIT:
