@@ -31,7 +31,7 @@ def main():
         else:
             print("Unknown command")
             print("1 left, 3 right, 5 up, 2 down, q quit")
-    
+
     print(new_game)
     print("Game ended")
 

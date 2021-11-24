@@ -51,8 +51,7 @@ class Game:
 
         if from_tile == 0:
             return False
-
-        if to_tile == 0:
+        elif to_tile == 0:
             self.map[to_y][to_x] = from_tile
             self.map[from_y][from_x] = 0
             return True
@@ -60,6 +59,8 @@ class Game:
             self.map[to_y][to_x] = from_tile + to_tile
             self.map[from_y][from_x] = 0
             return True
+        else:
+            return False
 
     def move_left(self):
         legal_move = False
@@ -68,7 +69,7 @@ class Game:
                 for column in range(self.size - 1):
                     if self.swap_tiles(column+1, row, column, row) is True:
                         legal_move = True
-        
+
         return legal_move
 
     def move_right(self):
@@ -98,7 +99,7 @@ class Game:
                 for row in range(self.size - 1):
                     if self.swap_tiles(column, row, column, row + 1) is True:
                         legal_move = True
-        
+
         return legal_move
 
     def game_continues(self):

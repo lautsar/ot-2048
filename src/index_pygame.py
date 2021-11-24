@@ -25,6 +25,5 @@ def main():
     #pygame.init()
     new_gameloop.start()
 
-
 if __name__ == "__main__":
     main()
