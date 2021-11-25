@@ -144,6 +144,7 @@ class Game:
 
     def get_results(self):
         print(f"Player {self.player} made {self.moves} moves in {self.size}x{self.size} grid, {self.result}")
+        return (self.player, self.moves, self.size, self.result)
 
     def __str__(self):
         printed = ""

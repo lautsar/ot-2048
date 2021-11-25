@@ -23,7 +23,7 @@ def main():
     new_gameloop = gameloop.GameLoop(new_game, new_renderer, new_event_queue)
     new_gameloop.start()
 
-    new_game.get_results()
+    print(new_game.get_results())
 
 if __name__ == "__main__":
     main()
