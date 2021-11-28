@@ -6,7 +6,7 @@ class Game:
         self.player = player
         self.map = []
         self.moves = 0
-        self.result = "New game"
+        self.biggest = 0
         self.initialize_map()
 
     def initialize_map(self):
@@ -121,7 +121,6 @@ class Game:
         for row in range(self.size):
             for column in range(self.size):
                 if self.map[row][column] == 2048:
-                    self.result = "Game won"
                     return False
 
         for row in range(self.size):
@@ -139,12 +138,21 @@ class Game:
                 if self.map[row + 1][column] == self.map[row][column]:
                     return True
 
-        self.result = "Game lost"
         return False
+    
+    def set_biggest(self):
+        biggest = 0
+        for row in range(self.size):
+            for column in range(self.size):
+                if self.map[row][column] > biggest:
+                    biggest = self.map[row][column]
+        
+        self.biggest = biggest
 
     def get_results(self):
-        print(f"Player {self.player} made {self.moves} moves in {self.size}x{self.size} grid, {self.result}")
-        return (self.player, self.moves, self.size, self.result)
+        print(f"Player {self.player} made {self.moves} moves in {self.size}x{self.size} grid, biggest {self.biggest}")
+        #return {'name': self.player, 'size': str(self.size)+"x"+str(self.size), 'moves': self.moves, 'biggest': self.biggest}
+        return [self.player, str(self.size)+"x"+str(self.size), self.moves, self.biggest]   
 
     def __str__(self):
         printed = ""

@@ -9,6 +9,7 @@ class GameLoop:
     def start(self):
         while True:
             if self.handle_events() is False:
+                self._board.set_biggest()
                 break
 
             self.render()

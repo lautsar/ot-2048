@@ -13,4 +13,7 @@ Pvm | Aika | Mitä tehty
 19.11. | 4 | Pikaversio laattojen kuvista, pygame käyttöönotto ja logiikan rakennusta
 20.11. | 2 | Pygamea käyttävien luokkien siirto testiprojektista oikeaan projektiin
 24.11. | 2 | Lisää pelin perustoimintoja
-Yht. | 21 |
+25.11. | 1 | Testejä Game-luokalle
+27.11. | 2 | Tietojen tallentamiseen liittyvien vaihtoehtojen tutkiminen ja testailu
+28.11. | 2 | Ensimmäinen versio tietojen tallentamisesta varsinaiseen projektiin
+Yht. | 26 |

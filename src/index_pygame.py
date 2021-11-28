@@ -4,12 +4,14 @@ import game
 import gameloop
 import event_queue
 import renderer
+import data.datahandling
 
 def main():
     size = 3
     new_game = game.Game(size)
     new_board = board.Board(new_game)
     new_event_queue = event_queue.EventQueue()
+    new_data = data.datahandling.DataHandling()
 
     cell_size = 100
     display_height = size * cell_size
@@ -23,7 +25,7 @@ def main():
     new_gameloop = gameloop.GameLoop(new_game, new_renderer, new_event_queue)
     new_gameloop.start()
 
-    print(new_game.get_results())
+    new_data.addRow(new_game.get_results())
 
 if __name__ == "__main__":
     main()
