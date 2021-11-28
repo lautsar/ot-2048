@@ -7,8 +7,22 @@ import renderer
 import data.datahandling
 
 def main():
-    size = 3
-    new_game = game.Game(size)
+    error = False
+    name = input("Player name (optional): ")
+    new_size = input("Select grid size (3, 4, 5): ")
+
+    if len(name) == 0:
+        name = "Unknown"
+
+    try:
+        size = int(new_size)
+    except ValueError:
+        error = True
+
+    if error is True or size < 3 or size > 5:
+        size = 4
+
+    new_game = game.Game(size, name)
     new_board = board.Board(new_game)
     new_event_queue = event_queue.EventQueue()
     new_data = data.datahandling.DataHandling()

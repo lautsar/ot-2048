@@ -32,22 +32,29 @@ Tulosnäkymällä näytetään tuloksia jo pelatuista peleistä.
 
 
 ## Perusversion tarjoama toiminnallisuus
+* Yksinkertainen graafinen käyttöliittymä
 * Käyttäjän toiminnot
-    * Käyttäjä voi halutessaan antaa nimimerkin ennen pelin aloitusta
+    * Käyttäjä voi halutessaan antaa nimimerkin ennen pelin aloitusta (tehty)
         * Tällöin nimimerkki näytetään top-listalla
         * Jos käyttäjä ei anna nimimerkkiä, top-listalla ei näytetä nimeä
-    * Käyttäjä voi valita peliruudukon koon annetuista vaihtoehdoista
+    * Käyttäjä voi valita peliruudukon koon annetuista vaihtoehdoista (tehty)
     * Käyttäjä voi katsoa top-listaa
 * Pelilliset toiminnot
-    * Käyttäjä voi valita muutamasta eri kokoisesta peliruudukosta
-    * Uuden pelin aloitus arpoo halutun kokoisen aloitusruudukon
-    * Laattoja voi liikuttaa nuolinäppäimillä
-    * Samanarvoiset laatat yhdistyvät ja niiden arvo kasvaa
-    * Jos siirto toteutuu, arvotaan johonkin tyhjään ruutuun uusi laatta
-    * Peli päättyy, kun laillisia siirtoja ei enää ole jäljellä
-    * Pelin aikana pidetään kirjaa tehdyista siirroista
-    * Pelin aikana pidetään kirjaa kertyneistä pisteistä
-    * Pelin jälkeen näytetään kyseisen pelin tulokset
+    * Käyttäjä voi valita muutamasta eri kokoisesta peliruudukosta (tehty)
+    * Uuden pelin aloitus arpoo halutun kokoisen aloitusruudukon (tehty)
+    * Laattoja voi liikuttaa nuolinäppäimillä (tehty)
+    * Samanarvoiset laatat yhdistyvät ja niiden arvo kasvaa (tehty)
+    * Jos siirto toteutuu, arvotaan johonkin tyhjään ruutuun uusi laatta (tehty)
+    * Peli päättyy, kun laillisia siirtoja ei enää ole jäljellä (tehty)
+    * Peli päättyy, jos pelaaja saa 2048-arvoisen laatan (tehty)
+    * Pelin aikana pidetään kirjaa tehdyista siirroista (tehty)
+    * Pelin jälkeen näytetään kyseisen pelin tulokset (tehty)
 * Tuloslistan toiminnot
-    * Sovellus pitää kirjaa pelattujen pelien pisteistä ja käytetyistä siirroista
+    * Sovellus pitää kirjaa pelattujen pelien tuloksista (tehty)
+    * Tulokset tallennetaan
     * Tuloslistalla voi tarkastella parhaita tuloksia
+
+## Jatkokehitysideoita
+* Tietoturvallisempi tapa tallentaa tietoja
+* Monipuolisempi pisteenlasku
+* Monipuolisemmat tavat tarkastella tuloksia

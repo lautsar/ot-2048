@@ -1,7 +1,7 @@
 import random
 
 class Game:
-    def __init__(self, size, player="Unknown"):
+    def __init__(self, size, player):
         self.size = size
         self.player = player
         self.map = []

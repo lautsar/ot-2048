@@ -14,6 +14,7 @@ Pvm | Aika | Mitä tehty
 20.11. | 2 | Pygamea käyttävien luokkien siirto testiprojektista oikeaan projektiin
 24.11. | 2 | Lisää pelin perustoimintoja
 25.11. | 1 | Testejä Game-luokalle
-27.11. | 2 | Tietojen tallentamiseen liittyvien vaihtoehtojen tutkiminen ja testailu
+27.11. | 3 | Tietojen tallentamiseen liittyvien vaihtoehtojen tutkiminen ja testailu
 28.11. | 2 | Ensimmäinen versio tietojen tallentamisesta varsinaiseen projektiin
-Yht. | 26 |
+28.11. | 2 | Pientä säätöä ja siivousta. Dokumenttien päivitystä
+Yht. | 31 |

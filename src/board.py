@@ -8,11 +8,6 @@ class Board:
         self.cell_size = 100
         self.level = tiles.Tiles(self.map, self.cell_size)
 
-    def render(self):
-        self.level.update_sprites(self.map)
-        self.level.all_sprites.draw(self.display)
-        pygame.display.update()
-
     def show(self):
         pygame.init()
 
