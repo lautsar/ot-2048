@@ -1,39 +1,31 @@
+import pygame
+import board
 import game
+import gameloop
+import event_queue
+import renderer
+import data.datahandling
 
 def main():
-    new_game = game.Game(3)
+    size = 3
+    new_game = game.Game(size)
+    new_board = board.Board(new_game)
+    new_event_queue = event_queue.EventQueue()
+    new_data = data.datahandling.DataHandling()
 
-    command = ""
+    cell_size = 100
+    display_height = size * cell_size
+    display_width = size * cell_size
+    display = pygame.display.set_mode((display_width, display_height))
 
-    while new_game.game_continues():
-        print(new_game)
-        print("1 left, 3 right, 5 up, 2 down, q quit")
-        command = input("Command: ")
-        if command == "1":
-            print("Move left")
-            if new_game.move_left() is True:
-                new_game.new_tile()
-        elif command == "3":
-            print("Move right")
-            if new_game.move_right() is True:
-                new_game.new_tile()
-        elif command == "5":
-            print("Move up")
-            if new_game.move_up() is True:
-                new_game.new_tile()
-        elif command =="2":
-            print("Move down")
-            if new_game.move_down() is True:
-                new_game.new_tile()
-        elif command == "q":
-            print("Game ends")
-            break
-        else:
-            print("Unknown command")
-            print("1 left, 3 right, 5 up, 2 down, q quit")
+    new_renderer = renderer.Renderer(display, new_board)
 
-    print(new_game)
-    print("Game ended")
+    pygame.display.set_caption("2048")
 
-if __name__ == '__main__':
+    new_gameloop = gameloop.GameLoop(new_game, new_renderer, new_event_queue)
+    new_gameloop.start()
+
+    new_data.add_row(new_game.get_results())
+
+if __name__ == "__main__":
     main()

@@ -23,15 +23,19 @@ class GameLoop:
                 if event.key == pygame.K_LEFT:
                     if self._board.move_left() is True:
                         self._board.new_tile()
+                    return True
                 if event.key == pygame.K_RIGHT:
                     if self._board.move_right() is True:
                         self._board.new_tile()
+                    return True
                 if event.key == pygame.K_UP:
                     if self._board.move_up() is True:
                         self._board.new_tile()
+                    return True
                 if event.key == pygame.K_DOWN:
                     if self._board.move_down() is True:
                         self._board.new_tile()
+                    return True
             elif event.type == pygame.QUIT:
                 return False
 

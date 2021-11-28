@@ -139,20 +139,19 @@ class Game:
                     return True
 
         return False
-    
+
     def set_biggest(self):
         biggest = 0
         for row in range(self.size):
             for column in range(self.size):
                 if self.map[row][column] > biggest:
                     biggest = self.map[row][column]
-        
+
         self.biggest = biggest
 
     def get_results(self):
         print(f"Player {self.player} made {self.moves} moves in {self.size}x{self.size} grid, biggest {self.biggest}")
-        #return {'name': self.player, 'size': str(self.size)+"x"+str(self.size), 'moves': self.moves, 'biggest': self.biggest}
-        return [self.player, str(self.size)+"x"+str(self.size), self.moves, self.biggest]   
+        return [self.player, str(self.size)+"x"+str(self.size), self.moves, self.biggest]
 
     def __str__(self):
         printed = ""

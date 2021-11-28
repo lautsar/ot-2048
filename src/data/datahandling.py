@@ -6,10 +6,10 @@ class DataHandling():
         self.spreadsheet = self.file.open('data')
         self.worksheet = self.spreadsheet[0]
 
-    def importData(self):
+    def import_data(self):
         data = self.worksheet.get_all_records()
         for row in data:
             print(row)
 
-    def addRow(self, results):
+    def add_row(self, results):
         self.worksheet.append_table(results)
