@@ -1,9 +1,9 @@
 import pygame
-import board
-import game
-import gameloop
-import event_queue
-import renderer
+import gameboard.board
+import gamelogic.game
+import gameboard.gameloop
+import gameboard.event_queue
+import gameboard.renderer
 import data.datahandling
 
 def main():
@@ -22,9 +22,9 @@ def main():
     if error is True or size < 3 or size > 5:
         size = 4
 
-    new_game = game.Game(size, name)
-    new_board = board.Board(new_game)
-    new_event_queue = event_queue.EventQueue()
+    new_game = gamelogic.game.Game(size, name)
+    new_board = gameboard.board.Board(new_game)
+    new_event_queue = gameboard.event_queue.EventQueue()
     new_data = data.datahandling.DataHandling()
 
     cell_size = 100
@@ -32,11 +32,11 @@ def main():
     display_width = size * cell_size
     display = pygame.display.set_mode((display_width, display_height))
 
-    new_renderer = renderer.Renderer(display, new_board)
+    new_renderer = gameboard.renderer.Renderer(display, new_board)
 
     pygame.display.set_caption("2048")
 
-    new_gameloop = gameloop.GameLoop(new_game, new_renderer, new_event_queue)
+    new_gameloop = gameboard.gameloop.GameLoop(new_game, new_renderer, new_event_queue)
     new_gameloop.start()
 
     new_data.add_row(new_game.get_results())

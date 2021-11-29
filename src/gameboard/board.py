@@ -1,12 +1,12 @@
 import pygame
-import tiles
+import gameboard.tiles
 
 class Board:
     def __init__(self, game):
         self.map = game.map
         self.game = game
         self.cell_size = 100
-        self.level = tiles.Tiles(self.map, self.cell_size)
+        self.level = gameboard.tiles.Tiles(self.map, self.cell_size)
 
     def show(self):
         pygame.init()
