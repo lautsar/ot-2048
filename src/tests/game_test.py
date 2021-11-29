@@ -1,9 +1,9 @@
 import unittest
-import game
+import gamelogic.game
 
 class TestGame(unittest.TestCase):
     def setUp(self):
-        self.new_game = game.Game(4)
+        self.new_game = gamelogic.game.Game(4, "Test")
         self.new_game.map = [[0, 2, 2, 0], [4, 0, 2, 16], [4, 128, 16, 16], [2, 0, 2, 0]]
     
     def test_empty_tiles_regocnized(self):
