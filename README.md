@@ -11,6 +11,13 @@ mahdollisimman suuriarvoinen laatta. Peli päättyy, kun siirtoja ei enää ole 
 
 - [Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
 
+- [Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
+
+## Tunnistettuja puutteita (viikon 4 palautus)
+
+* Käyttäjän syötteen virhetilanteisiin varautuminen
+* Tietoturvan kannalta kyseenalainen tapa tallentaa credentials-tiedot repoon. Riskit katsottu tämän kurssin puitteissa riittävän pieneksi.
+
 ## Komentorivikomennot
 
 Riippuvuudet voi asentaa komennolla
