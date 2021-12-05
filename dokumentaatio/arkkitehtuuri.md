@@ -2,4 +2,4 @@
 
 ## Alustava luokkakaavio
 
-![Luokkakaavio](kuvat/image.png)
+![Luokkakaavio](kuvat/luokkakaavio.png)
