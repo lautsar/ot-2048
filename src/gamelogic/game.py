@@ -3,7 +3,10 @@ import random
 class Game:
     def __init__(self, size, player):
         self.size = size
-        self.player = player
+        if len(player) > 0:
+            self.player = player
+        else:
+            self.player = "Unknown"
         self.map = []
         self.moves = 0
         self.biggest = 0

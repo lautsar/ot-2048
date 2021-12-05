@@ -152,3 +152,17 @@ class TestGame(unittest.TestCase):
         self.new_game.map = [[8, 2, 8, 4], [4, 2, 4, 8], [8, 4, 8, 4], [4, 8, 4, 8]]
         game_continues = self.new_game.game_continues()
         self.assertTrue(game_continues)
+    
+    def test_set_biggest_value_right(self):
+        self.new_game.set_biggest()
+        self.assertEqual(self.new_game.biggest, 128)
+    
+    def test_get_results_returns_correctly(self):
+        right_result = ["Test", "4x4", 0, 0]
+        test_result = self.new_game.get_results()
+        self.assertEqual(test_result, right_result)
+
+    def test_str_returns_right_string(self):
+        right_string = "[0, 2, 2, 0]\n[4, 0, 2, 16]\n[4, 128, 16, 16]\n[2, 0, 2, 0]\n"
+        test_string = str(self.new_game)
+        self.assertEqual(right_string, test_string)

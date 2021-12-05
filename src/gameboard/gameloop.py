@@ -10,6 +10,7 @@ class GameLoop:
         while True:
             if self.handle_events() is False:
                 self._board.set_biggest()
+                self.close()
                 break
 
             self.render()
@@ -41,3 +42,6 @@ class GameLoop:
 
     def render(self):
         self._renderer.render()
+
+    def close(self):
+        self._renderer.close_window()

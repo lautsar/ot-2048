@@ -10,3 +10,6 @@ class Renderer:
         self._board.level.all_sprites.draw(self._display)
 
         pygame.display.update()
+
+    def close_window(self):
+        pygame.display.quit()

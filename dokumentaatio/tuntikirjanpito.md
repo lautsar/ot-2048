@@ -17,4 +17,7 @@ Pvm | Aika | Mitä tehty
 27.11. | 3 | Tietojen tallentamiseen liittyvien vaihtoehtojen tutkiminen ja testailu
 28.11. | 2 | Ensimmäinen versio tietojen tallentamisesta varsinaiseen projektiin
 28.11. | 2 | Pientä säätöä ja siivousta. Dokumenttien päivitystä
-Yht. | 31 |
+1.12. | 3 | Tkinteriin tutustumista ja testaamista
+2.12. | 2 | Käyttöliittymän luonnostelua
+5.12. | 3 | Graafisen käyttöliittymän käyttöönotto ja siihen liittyviä muutoksia
+Yht. | 39 |

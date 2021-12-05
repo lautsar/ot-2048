@@ -2,7 +2,7 @@
 
 ## Sovelluksen tarkoitus
 
-Sovelluksen tarkoitus on tarjota 2048-peli. Pelissä pelaaja liikuttaa numeroituja laattoja pelilaudalla eri suuntiin. Tavoitteena on saavuttaa samanarvoisia laattoja yhdistelemällä mahdollisimman suuriarvoinen laatta. Kunkin siirron jälkeen laudalle asetetaan uusi numerolaatta. Peli päättyy, kun siirtoja ei enää ole mahdollista tehdä.
+Sovelluksen tarkoitus on tarjota 2048-peli. Pelissä pelaaja liikuttaa numeroituja laattoja pelilaudalla eri suuntiin. Tavoitteena on saavuttaa samanarvoisia laattoja yhdistelemällä mahdollisimman suuriarvoinen laatta. Kunkin siirron jälkeen laudalle asetetaan uusi numerolaatta. Pelaaja voittaa, jos hän saa yhdistettyä Peli päättyy, jos siirtoja ei enää ole mahdollista tehdä.
 
 ## Käyttäjät
 

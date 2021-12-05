@@ -1,3 +1,4 @@
+import operator
 import pygsheets
 
 class DataHandling():
@@ -6,7 +7,6 @@ class DataHandling():
         self.spreadsheet = self.file.open('data')
         self.worksheet = self.spreadsheet[0]
         self.data = []
-        self.new_added = False
 
     def show_data(self):
         if len(self.data) == 0:
@@ -19,9 +19,20 @@ class DataHandling():
 
     def add_row(self, results):
         self.worksheet.append_table(results)
-        self.new_added = True
 
     def sort_data(self):
-        if self.new_added is True:
-            self.import_data()
+        self.import_data()
+        self.data.sort(key=operator.itemgetter('moves'))
+        self.data.sort(key=operator.itemgetter('biggest'), reverse=True)
 
+        for i in range(10):
+            print(self.data[i])
+
+    def print_all_data(self):
+        for row in self.data:
+            print(row)
+
+    def get_latest_result(self):
+        self.import_data()
+
+        return self.data[len(self.data) - 1]
