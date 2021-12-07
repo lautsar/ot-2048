@@ -13,10 +13,14 @@ mahdollisimman suuriarvoinen laatta. Peli päättyy, kun siirtoja ei enää ole 
 
 - [Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
 
-## Tunnistettuja puutteita (viikon 4 palautus)
+## Releaset
 
-* Käyttäjän syötteen virhetilanteisiin varautuminen
+- [Viikko 5](https://github.com/lautsar/ot-2048/releases/tag/viikko5)
+
+## Tunnistettuja puutteita (viikon 5 palautus)
+
 * Tietoturvan kannalta kyseenalainen tapa tallentaa credentials-tiedot repoon. Riskit katsottu tämän kurssin puitteissa riittävän pieneksi.
+* Graafista käyttöliittymää ei ole muotoiltu millään tavalla, vaan kaikki tulee peräkkäin
 
 ## Komentorivikomennot
 
