@@ -38,7 +38,7 @@ Tulosnäkymällä näytetään tuloksia jo pelatuista peleistä.
         * Tällöin nimimerkki näytetään top-listalla
         * Jos käyttäjä ei anna nimimerkkiä, top-listalla ei näytetä nimeä
     * Käyttäjä voi valita peliruudukon koon annetuista vaihtoehdoista (tehty)
-    * Käyttäjä voi katsoa top-listaa
+    * Käyttäjä voi katsoa top-listaa (tehty)
 * Pelilliset toiminnot
     * Käyttäjä voi valita muutamasta eri kokoisesta peliruudukosta (tehty)
     * Uuden pelin aloitus arpoo halutun kokoisen aloitusruudukon (tehty)
@@ -51,8 +51,8 @@ Tulosnäkymällä näytetään tuloksia jo pelatuista peleistä.
     * Pelin jälkeen näytetään kyseisen pelin tulokset (tehty)
 * Tuloslistan toiminnot
     * Sovellus pitää kirjaa pelattujen pelien tuloksista (tehty)
-    * Tulokset tallennetaan
-    * Tuloslistalla voi tarkastella parhaita tuloksia
+    * Tulokset tallennetaan (tehty)
+    * Tuloslistalla voi tarkastella parhaita tuloksia (tehty)
 
 ## Jatkokehitysideoita
 * Tietoturvallisempi tapa tallentaa tietoja
