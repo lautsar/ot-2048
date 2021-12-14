@@ -16,11 +16,12 @@ mahdollisimman suuriarvoinen laatta. Peli päättyy, kun siirtoja ei enää ole 
 ## Releaset
 
 - [Viikko 5](https://github.com/lautsar/ot-2048/releases/tag/viikko5)
+- [Viikko 6](https://github.com/lautsar/ot-2048/releases/tag/viikko6)
 
-## Tunnistettuja puutteita (viikon 5 palautus)
+## Tunnistettuja puutteita (viikon 6 palautus)
 
 * Tietoturvan kannalta kyseenalainen tapa tallentaa credentials-tiedot repoon. Riskit katsottu tämän kurssin puitteissa riittävän pieneksi.
-* Graafista käyttöliittymää ei ole muotoiltu millään tavalla, vaan kaikki tulee peräkkäin
+* Graafista käyttöliittymää ei ole muotoiltu millään tavalla, vaan kaikki tiedot tulevat peräkkäin.
 
 ## Komentorivikomennot
 
@@ -44,3 +45,8 @@ Testikattavuusraportin voi muodostaa komennolla
 poetry run invoke coverage-report
 ```
 Raportti muodostuu *htmlcov*-hakemistoon
+
+Tiedoston [.pylintrc](.pylintrc) määrittelemät tarkistukset voi suorittaa komennolla:
+```
+poetry run invoke lint
+```
