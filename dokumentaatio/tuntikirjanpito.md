@@ -20,4 +20,6 @@ Pvm | Aika | Mitä tehty
 1.12. | 3 | Tkinteriin tutustumista ja testaamista
 2.12. | 2 | Käyttöliittymän luonnostelua
 5.12. | 3 | Graafisen käyttöliittymän käyttöönotto ja siihen liittyviä muutoksia
-Yht. | 39 |
+11.12. | 2 | Top 10-listan näyttäminen
+12.12. | 1 | Docstringejä
+Yht. | 42 |

@@ -1,4 +1,5 @@
 import tkinter
+import data.datahandling
 
 class ResultsView:
     def __init__(self, root, game, end, result, start):
@@ -8,6 +9,7 @@ class ResultsView:
         self._show_results_view = result
         self._show_start_view = start
         self._frame = None
+        self._datahandler = data.datahandling.DataHandling()
 
         self._initialize()
 
@@ -18,11 +20,34 @@ class ResultsView:
         self._frame.destroy()
 
     def _initialize(self):
+        results = self._datahandler.get_top_ten()
         self._frame = tkinter.Frame(master=self._root)
-        label = tkinter.Label(master=self._frame, text="This is a result view")
-        label2 = tkinter.Label(master=self._frame, text="Nothing to see here, yet")
+        label = tkinter.Label(master=self._frame, text="All time top 10")
+        label2 = tkinter.Label(master=self._frame, text="Name \t Size \t Moves \t Biggest")
+        result1 = tkinter.Label(master=self._frame, text=results[0])
+        result2 = tkinter.Label(master=self._frame, text=results[1])
+        result3 = tkinter.Label(master=self._frame, text=results[2])
+        result4 = tkinter.Label(master=self._frame, text=results[3])
+        result5 = tkinter.Label(master=self._frame, text=results[4])
+        result6 = tkinter.Label(master=self._frame, text=results[5])
+        result7 = tkinter.Label(master=self._frame, text=results[6])
+        result8 = tkinter.Label(master=self._frame, text=results[7])
+        result9 = tkinter.Label(master=self._frame, text=results[8])
+        result10 = tkinter.Label(master=self._frame, text=results[9])
+
         button = tkinter.Button(master=self._frame, text="Back to start view", command=self._show_start_view)
 
         label.pack()
         label2.pack()
+        result1.pack()
+        result2.pack()
+        result3.pack()
+        result4.pack()
+        result5.pack()
+        result6.pack()
+        result7.pack()
+        result8.pack()
+        result9.pack()
+        result10.pack()
+
         button.pack()
