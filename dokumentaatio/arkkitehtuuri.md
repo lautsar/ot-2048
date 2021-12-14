@@ -4,7 +4,7 @@
 
 Koodin pakkausrakenne on seuraava:
 
-![Pakkausrakenne](kuvat/pakkausrakenne.png)
+![Pakkausrakenne](kuvat/pakkauskaavio.png)
 
 Pakkaus *ui* sisältää käyttöliittymän rakennuksesta vastaavat luokat. Pakkaus *gameboard*
 sisältää graafisen pelin muodostumisesta vastaavat luokat ja pakkaus *gamelogic*
