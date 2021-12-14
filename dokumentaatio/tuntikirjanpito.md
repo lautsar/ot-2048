@@ -22,4 +22,5 @@ Pvm | Aika | Mitä tehty
 5.12. | 3 | Graafisen käyttöliittymän käyttöönotto ja siihen liittyviä muutoksia
 11.12. | 2 | Top 10-listan näyttäminen
 12.12. | 1 | Docstringejä
-Yht. | 42 |
+14.12. | 1 | Dokumentointia, mm. alustava pakkausrakenne
+Yht. | 44 |
