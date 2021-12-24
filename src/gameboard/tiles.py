@@ -4,18 +4,7 @@ import gameboard.values
 class Tiles:
     def __init__(self, level_map, cell_size):
         self.cell_size = cell_size
-        self.blanks = pygame.sprite.Group()
-        self.value2 = pygame.sprite.Group()
-        self.value4 = pygame.sprite.Group()
-        self.value8 = pygame.sprite.Group()
-        self.value16 = pygame.sprite.Group()
-        self.value32 = pygame.sprite.Group()
-        self.value64 = pygame.sprite.Group()
-        self.value128 = pygame.sprite.Group()
-        self.value256 = pygame.sprite.Group()
-        self.value512 = pygame.sprite.Group()
-        self.value1024 = pygame.sprite.Group()
-        self.value2048 = pygame.sprite.Group()
+        self.values = pygame.sprite.Group()
         self.all_sprites = pygame.sprite.Group()
         self.update_sprites(level_map)
 
@@ -30,41 +19,11 @@ class Tiles:
                 normalized_y = y * self.cell_size
 
                 if cell == 0:
-                    self.blanks.add(gameboard.values.Blank(normalized_x, normalized_y))
-                elif cell == 2:
-                    self.value2.add(gameboard.values.Value2(normalized_x, normalized_y))
-                elif cell == 4:
-                    self.value4.add(gameboard.values.Value4(normalized_x, normalized_y))
-                elif cell == 8:
-                    self.value8.add(gameboard.values.Value8(normalized_x, normalized_y))
-                elif cell == 16:
-                    self.value16.add(gameboard.values.Value16(normalized_x, normalized_y))
-                elif cell == 32:
-                    self.value32.add(gameboard.values.Value32(normalized_x, normalized_y))
-                elif cell == 64:
-                    self.value64.add(gameboard.values.Value64(normalized_x, normalized_y))
-                elif cell == 128:
-                    self.value128.add(gameboard.values.Value128(normalized_x, normalized_y))
-                elif cell == 256:
-                    self.value256.add(gameboard.values.Value256(normalized_x, normalized_y))
-                elif cell == 512:
-                    self.value512.add(gameboard.values.Value512(normalized_x, normalized_y))
-                elif cell == 1024:
-                    self.value1024.add(gameboard.values.Value1024(normalized_x, normalized_y))
-                elif cell == 2048:
-                    self.value2048.add(gameboard.values.Value2048(normalized_x, normalized_y))
+                    self.all_sprites.add(gameboard.values.Value(0, normalized_x, normalized_y))
+                else:
+                    for i in range(1, 12):
+                        if cell == pow(2, i):
+                            self.all_sprites.add(gameboard.values.Value(pow(2, i), normalized_x, normalized_y))
+                            break
 
-        self.all_sprites.add(
-            self.blanks,
-            self.value2,
-            self.value4,
-            self.value8,
-            self.value16,
-            self.value32,
-            self.value64,
-            self.value128,
-            self.value256,
-            self.value512,
-            self.value1024,
-            self.value2048
-        )
+
