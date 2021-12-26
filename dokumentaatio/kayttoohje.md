@@ -1,5 +1,7 @@
 # Käyttöohje
 
+Lataa projektin viimeisimmän [releasen](https://github.com/lautsar/ot-2048/releases) lähdekoodi valitsemalla Assets-osion alta Source code.
+
 ## Ohjelman käynnistäminen
 
 Asenna riippuvuudet ennen ohjelman käynnistämistä komennolla
@@ -24,9 +26,11 @@ Pelaajan nimi ei ole pakollinen ja oletuskooksi on valittu 4x4.
 
 Pelilauta aukeaa omaan ikkunaan. Pelilaudan laattoja voi liikuttaa nuolinäppäimillä.
 
+Peli-ikkuna sulkeutuu, kun peli päättyy tai pelaaja sulkee ikkunan.
+
 ## Tuloslistan tarkastelu
 
 Tuloslistaa voi katsella painamalla päävalikosta "View"-nappulaa.
 
-Tällä hetkellä tuloslista näyttää kymmenen parasta tulosta. Tulosjärjestyksen määrittää tällä hetkellä ensisijaisesti 
+Tuloslista näyttää kymmenen parasta tulosta kautta aikojen. Tulosjärjestyksen määrittää ensisijaisesti 
 suurimman laatan arvo ja sen jälkeen tuloksen saavuttamiseksi käytettyjen siirtojen määrä.

@@ -2,13 +2,29 @@ import pygame
 import gameboard.values
 
 class Tiles:
+    """Luokka vastaa pelilaudan laattojen asettamisesta pelilaudalle
+
+    Attributes:
+        cell_size: Yhden ruudun koko
+        all_sprites: Kokoelma sprite-olioita eli numerolaattoja
+    """
     def __init__(self, level_map, cell_size):
+        """Luokan konstruktori, joka luo uuden pelilaudan
+
+        Args:
+            level_map: Piirrettävän pelilaudan kartta taulukkomuodossa
+            cell_size: Piirrettävän ruudun koko
+        """
         self.cell_size = cell_size
-        self.values = pygame.sprite.Group()
         self.all_sprites = pygame.sprite.Group()
         self.update_sprites(level_map)
 
     def update_sprites(self, level_map):
+        """Metodi päivittää sprite-oliot annetun kartan mukaisesti.
+
+        Args:
+            level_map: Päivitetty kartta, joka täytyy piirtää
+        """
         height = len(level_map)
         width = len(level_map[0])
 
@@ -23,7 +39,6 @@ class Tiles:
                 else:
                     for i in range(1, 12):
                         if cell == pow(2, i):
-                            self.all_sprites.add(gameboard.values.Value(pow(2, i), normalized_x, normalized_y))
+                            self.all_sprites.add(gameboard.values.Value(pow(2, i), 
+                                                normalized_x, normalized_y))
                             break
-
-

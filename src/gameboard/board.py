@@ -17,5 +17,5 @@ class Board:
                 if event.type == pygame.QUIT:
                     running = False
 
-            self.level.all_sprites.draw(self.display)
+            self.level.all_sprites.draw()
             pygame.display.flip()

@@ -2,9 +2,8 @@ import tkinter
 import data.datahandling
 
 class ResultsView:
-    def __init__(self, root, game, end, result, start):
+    def __init__(self, root, end, result, start):
         self._root = root
-        self._show_game_view = game
         self._show_game_end_view = end
         self._show_results_view = result
         self._show_start_view = start

@@ -8,23 +8,21 @@ Sovelluksen tarkoitus on tarjota 2048-peli. Pelissä pelaaja liikuttaa numeroitu
 
 Sovelluksella on vain yksi käyttäjärooli: peruskäyttäjä eli pelin pelaaja.
 
-## Käyttöliittymäluonnos
+## Käyttöliittymä
 
 **Aloitusnäkymä**
 
 Aloitusnäkymällä on kaksi nappia: uusi peli ja tuloslista.
 
-Jos käyttäjä aloittaa pelin, siirrytään pelinäkymälle. Jos käyttäjä haluaa katsoa tuloslistoja, siirrytään tulosnäkymälle.
+Jos käyttäjä aloittaa uuden pelin, peliruudukko aukeaa omaan ikkunaan. Kun pelin suoritus päättyy, siirrytään yhteenvetonäkymälle.
 
-**Pelinäkymä**
-
-Kun peli on käynnissä, kerrotaan, että peli on käynnissä. Varsinainen peliruudukko avautuu omaan ikkunaan. Kun pelin suoritus päättyy, siirrytään yhteenvetonäkymälle.
+Jos käyttäjä haluaa katsoa tuloslistoja, siirrytään tulosnäkymälle. 
 
 **Yhteenvetonäkymä**
 
-Yhteenvetonäkymällä näytetään pelatun pelin tulokset.
+Yhteenvetonäkymällä näytetään juuri pelatun ja päättyneen pelin tulokset.
 
-Pelaaja voi aloittaa uuden pelin, jolloin siirrytään takaisin pelinäkymälle. Pelaaja voi myös valita katsoa tuloslistoja, jolloin siirrytään tulosnäkymälle.
+Pelaaja voi tältä näkymältä siirtyä nappia painamalla takaisin etusivulle. Pelaaja voi myös valita katsoa tuloslistoja, jolloin siirrytään tulosnäkymälle.
 
 **Tulosnäkymä**
 
@@ -34,25 +32,25 @@ Tulosnäkymällä näytetään tuloksia jo pelatuista peleistä.
 ## Perusversion tarjoama toiminnallisuus
 * Yksinkertainen graafinen käyttöliittymä
 * Käyttäjän toiminnot
-    * Käyttäjä voi halutessaan antaa nimimerkin ennen pelin aloitusta (tehty)
-        * Tällöin nimimerkki näytetään top-listalla
-        * Jos käyttäjä ei anna nimimerkkiä, top-listalla ei näytetä nimeä
-    * Käyttäjä voi valita peliruudukon koon annetuista vaihtoehdoista (tehty)
-    * Käyttäjä voi katsoa top-listaa (tehty)
+    * Käyttäjä voi aloittaa uuden pelin
+        * Käyttäjä voi halutessaan antaa nimimerkin ennen pelin aloitusta
+            * Tällöin nimimerkki näytetään top-listalla
+            * Jos käyttäjä ei anna nimimerkkiä, top-listalla ei näytetä nimeä
+        * Käyttäjä voi valita peliruudukon koon annetuista vaihtoehdoista
+    * Käyttäjä voi katsoa top-listaa
 * Pelilliset toiminnot
-    * Käyttäjä voi valita muutamasta eri kokoisesta peliruudukosta (tehty)
-    * Uuden pelin aloitus arpoo halutun kokoisen aloitusruudukon (tehty)
-    * Laattoja voi liikuttaa nuolinäppäimillä (tehty)
-    * Samanarvoiset laatat yhdistyvät ja niiden arvo kasvaa (tehty)
-    * Jos siirto toteutuu, arvotaan johonkin tyhjään ruutuun uusi laatta (tehty)
-    * Peli päättyy, kun laillisia siirtoja ei enää ole jäljellä (tehty)
-    * Peli päättyy, jos pelaaja saa 2048-arvoisen laatan (tehty)
-    * Pelin aikana pidetään kirjaa tehdyista siirroista (tehty)
-    * Pelin jälkeen näytetään kyseisen pelin tulokset (tehty)
+    * Uuden pelin aloitus arpoo halutun kokoisen aloitusruudukon
+    * Laattoja voi liikuttaa nuolinäppäimillä
+    * Samanarvoiset laatat yhdistyvät ja niiden arvo kasvaa
+    * Jos siirto toteutuu, arvotaan johonkin tyhjään ruutuun uusi laatta
+    * Peli päättyy, kun laillisia siirtoja ei enää ole jäljellä
+    * Peli päättyy, jos pelaaja saa 2048-arvoisen laatan
+    * Pelin aikana pidetään kirjaa tehdyista siirroista
+    * Pelin jälkeen näytetään kyseisen pelin tulokset
 * Tuloslistan toiminnot
-    * Sovellus pitää kirjaa pelattujen pelien tuloksista (tehty)
-    * Tulokset tallennetaan (tehty)
-    * Tuloslistalla voi tarkastella parhaita tuloksia (tehty)
+    * Sovellus pitää kirjaa pelattujen pelien tuloksista
+    * Tulokset tallennetaan
+    * Tuloslistalla voi tarkastella top 10 -tuloksia
 
 ## Jatkokehitysideoita
 * Tietoturvallisempi tapa tallentaa tietoja

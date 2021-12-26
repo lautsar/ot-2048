@@ -10,21 +10,19 @@ voittaa pelin.
 
 - [Vaatimusmäärittely](dokumentaatio/vaatimusmaarittely.md)
 
-- [Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
-
 - [Arkkitehtuuri](dokumentaatio/arkkitehtuuri.md)
 
 - [Käyttöohje](dokumentaatio/kayttoohje.md)
+
+- [Testausdokumentti](dokumentaatio/testausdokumentti.md)
+
+- [Tuntikirjanpito](dokumentaatio/tuntikirjanpito.md)
 
 ## Releaset
 
 - [Viikko 5](https://github.com/lautsar/ot-2048/releases/tag/viikko5)
 - [Viikko 6](https://github.com/lautsar/ot-2048/releases/tag/viikko6)
-
-## Tunnistettuja puutteita (viikon 6 palautus)
-
-* Tietoturvan kannalta kyseenalainen tapa tallentaa credentials-tiedot repoon. Riskit katsottu tämän kurssin puitteissa riittävän pieneksi.
-* Graafista käyttöliittymää ei ole muotoiltu millään tavalla, vaan kaikki tiedot tulevat peräkkäin.
+- [Loppupalautus](https://github.com/lautsar/ot-2048/releases/tag/loppupalautus)
 
 ## Komentorivikomennot
 
