@@ -244,14 +244,3 @@ class Game:
         """
         return [self.player, str(self.size)+"x"+str(self.size), self.moves, self.biggest]
 
-    def __str__(self):
-        """Muodostaa pelilaudasta merkkijonomuotoisen esityksen.
-
-        Returns:
-            Merkkijono, joka kuvaa pelilaudan tilaa.
-        """
-        printed = ""
-        for row in self.map:
-            printed = printed + str(row) + '\n'
-
-        return printed

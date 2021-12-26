@@ -39,6 +39,6 @@ class Tiles:
                 else:
                     for i in range(1, 12):
                         if cell == pow(2, i):
-                            self.all_sprites.add(gameboard.values.Value(pow(2, i), 
+                            self.all_sprites.add(gameboard.values.Value(pow(2, i),
                                                 normalized_x, normalized_y))
                             break

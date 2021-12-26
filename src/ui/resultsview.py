@@ -21,8 +21,10 @@ class ResultsView:
     def _initialize(self):
         results = self._datahandler.get_top_ten()
         self._frame = tkinter.Frame(master=self._root)
-        label = tkinter.Label(master=self._frame, text="All time top 10")
-        label2 = tkinter.Label(master=self._frame, text="Name \t Size \t Moves \t Biggest")
+        label = tkinter.Label(master=self._frame, text="All time top 10",
+                                font="Helvetica 12 bold")
+        label2 = tkinter.Label(master=self._frame, text="Name \t Size \t Moves \t Biggest",
+                                font="Helvetica 10 bold")
         result1 = tkinter.Label(master=self._frame, text=results[0])
         result2 = tkinter.Label(master=self._frame, text=results[1])
         result3 = tkinter.Label(master=self._frame, text=results[2])
@@ -34,7 +36,8 @@ class ResultsView:
         result9 = tkinter.Label(master=self._frame, text=results[8])
         result10 = tkinter.Label(master=self._frame, text=results[9])
 
-        button = tkinter.Button(master=self._frame, text="Back to start view", command=self._show_start_view)
+        button = tkinter.Button(master=self._frame, text="Back to start view",
+                                command=self._show_start_view)
 
         label.pack()
         label2.pack()

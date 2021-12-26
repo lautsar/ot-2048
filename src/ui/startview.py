@@ -40,7 +40,7 @@ class StartView:
         start_game_button = tkinter.Button(master=self._frame, text="Start",
                                             command=self._start_new_game, width=15)
 
-        label4 = tkinter.Label(master=self._frame, text="Watch previous results",
+        label4 = tkinter.Label(master=self._frame, text="Check top 10 results",
                                 font="Helvetica 12 bold")
         button2 = tkinter.Button(master=self._frame, text="View", command=self._show_results_view,
                                 width=15)

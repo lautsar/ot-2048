@@ -161,8 +161,3 @@ class TestGame(unittest.TestCase):
         right_result = ["Test", "4x4", 0, 0]
         test_result = self.new_game.get_results()
         self.assertEqual(test_result, right_result)
-
-    def test_str_returns_right_string(self):
-        right_string = "[0, 2, 2, 0]\n[4, 0, 2, 16]\n[4, 128, 16, 16]\n[2, 0, 2, 0]\n"
-        test_string = str(self.new_game)
-        self.assertEqual(right_string, test_string)
