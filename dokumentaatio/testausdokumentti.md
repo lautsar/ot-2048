@@ -12,6 +12,9 @@ Varsinaisesta sovelluslogiikasta vastaavaa `Game`-luokkaa testataan TestGame-luo
 vastaavaa `DataHandling`-luokkaa testataan TestDataHandling-luokalla. Tietojen käsittelyn testausta varten
 testidata tallennetaan eri välilehdelle kuin varsinainen data.
 
+Pelikierroksen pyörittämisestä vastaavaa `GameLoop`-luokkaa testataan TestGameLoop-luokalla. Normaalien
+Renderer- ja EventQueue-luokkien sijasta testiluokalle annetaan erilliset StubRenderer- ja StubEventQueue-oliot.
+
 ### Testauskattavuus
 
 Käyttöliittymäkerros on jätetty testauskattavuuden ulkopuolelle. Tällöin sovelluksen testauksen haaraumakattavuus

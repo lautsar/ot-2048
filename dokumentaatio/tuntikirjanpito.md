@@ -24,8 +24,8 @@ Pvm | Aika | Mitä tehty
 12.12. | 1 | Docstringejä
 14.12. | 1 | Dokumentointia, mm. alustava pakkausrakenne
 17.12. | 3 | Koodin refaktorointia, muita korjauksia
-20.12. | 2 | Käyttöliittymän viilaamista
-22.12. | 3 | Testejä
-25.12. | 2 | Dokumentointia, tarkastuksia
-26.12. | 5 | Viimeisiä viilauksia, korjauksia, tarkastuksia
-Yht. | 57 |
+20.12. | 3 | Käyttöliittymän viilaamista ja muita viilauksia
+22.12. | 3 | Testejä, korjailuja
+25.12. | 3 | Dokumentointia, tarkastuksia
+26.12. | 6 | Viimeisiä viilauksia, korjauksia, tarkastuksia
+Yht. | 60 |
