@@ -29,6 +29,12 @@ vastaavien luokkien olioita.
 
 ![Luokkakaavio](kuvat/luokkakaavio.png)
 
+Game-luokka vastaa pelin säännöistä, kuten pelilaudan pohjan luomisesta, siirtojen tekemisestä, uuden laatan
+arpomisesta ja pelin päättymisen tunnistamisesta. DataHandling-luokka vastaa pelin tulosten tallentamisesta
+ja näyttämisestä.
+
+GameMotor-luokka vastaa peliin tarvittavien olioiden luonnista. Game- ja DataHandling-olioiden lisäksi se luo esimerkiksi pygamen tarvitsemat tapahtumankäsittelijä- ja piirtäjäoliot. GameLoop-luokka vastaa näiden avulla yhden pelikierroksen toiminnasta.
+
 ## Tietojen tallennus
 
 Pakkauksen *data* luokka DataHandling huolehtii tietojen tallennuksesta Google Sheets -tiedostoon

@@ -6,7 +6,7 @@ Järjestelmätason testit on suoritettu manuaalisesti.
 
 ## Yksikkö- ja integraatiotestaus
 
-### Sovelluslogiikka
+### Sovelluslogiikka ja tietojen tallennus
 
 Varsinaisesta sovelluslogiikasta vastaavaa `Game`-luokkaa testataan TestGame-luokalla. Datan käsittelystä
 vastaavaa `DataHandling`-luokkaa testataan TestDataHandling-luokalla. Tietojen käsittelyn testausta varten
