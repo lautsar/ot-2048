@@ -14,9 +14,9 @@ sisältää tietojen tallennukseen, hakemiseen ja näyttämiseen liittuvät luok
 ## Käyttöliittymä
 
 Käyttöliittymä sisältää kolme erillistä näkymää:
-    * Aloitusnäkymä
-    * Pelatun pelin tulokset
-    * Top 10 -lista
+   * Aloitusnäkymä
+   * Pelatun pelin tulokset
+   * Top 10 -lista
 
 Lisäksi varsinainen peli avautuu omaan ikkunaansa.
 
