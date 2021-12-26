@@ -23,4 +23,9 @@ Pvm | Aika | Mitä tehty
 11.12. | 2 | Top 10-listan näyttäminen
 12.12. | 1 | Docstringejä
 14.12. | 1 | Dokumentointia, mm. alustava pakkausrakenne
-Yht. | 44 |
+17.12. | 3 | Koodin refaktorointia, muita korjauksia
+20.12. | 2 | Käyttöliittymän viilaamista
+22.12. | 3 | Testejä
+25.12. | 2 | Dokumentointia, tarkastuksia
+26.12. | 5 | Viimeisiä viilauksia, korjauksia, tarkastuksia
+Yht. | 57 |
